@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ishita Agrawal</title>
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+<body>
+
+    <header>
+        <h1><font color= "white">ISHITA AGRAWAL</font></h1>
+        <p>Business Analyst | Creative | Innovative</p>
+    </header>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#projects">Projects</a>
+        <a href="#resume">Resume</a>
+        <a href="#about">About</a>
+    </nav>
+
+    <section id="home">
+        <h2><center>About Me</center></h2>
+        <div class="about-me">
+            <img src="C:\Users\admin\Desktop\e-portfolio\images\me\about.jpg" alt="Your Image">
+            <p>
+                Hi, my name is Ishita Agrawal, a business analyst with a background in Computer Science and Engineering.
+                <br><br>
+                I work on data, getting meaningful insights out of data is something I really like. Data visualization and Machine Learning are some techniques
+                that I use to achieve my goal using different BI tools and technologies.
+                <br>
+                I am a big open source believer since I think with sharing solutions and methods we can achieve a lot more as a community. Therefore, I prefer to use R and Python for my daily work.
+                <br><br>
+                I have a passion for nature and environment and I would love to help you out of you have any project in those areas. However, I am open to other projects too.
+                <br>
+                On my website you can find some examples of my work, the projects that I have practiced on, most of them are links to another page with the visualization.
+                <br><br>
+                Have fun browsing through the content and thank you for visiting ! ❤️
+            </p>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>My Projects</h2>
+        <div class="projects">
+            <div class="project">
+                <h3>Analyzing which Campaign should be Discontinued</h3>
+                <p>This is completed as a part of my Internship at Excelerate with Globalshala.
+                    <br><br>
+                    Findings: Campaigns 3 and 11 have the lowest reach in targeted region and are highly cost ineffective.</p>
+                <a href="C:\Users\admin\Desktop\e-portfolio\code\globalshala.html">View Details</a>
+            </div>
+
+            <div class="project">
+                <h3>Road Accidents Analysis 2019-2022</h3>
+                <p>The analysis of road accidents in UK between 2019-2022 occured by different vehicles is practiced in this project. The analysis is done using different parameters and KPIs.</p>
+                <a href="C:\Users\admin\Desktop\e-portfolio\code\road accident analysis.html">View Details</a>
+            </div>
+
+            <div class="project">
+                <h3>Multiple Disease Prediction System</h3>
+                <p>This project aims to predict if a person has a disease or not. This is a ML project build on logistic regression and SVM. The analysis has provided us with the common symptoms that can cause a heart disease.</p>
+                <a href="C:\Users\admin\Desktop\e-portfolio\code\multiple disease prediction system.html">View Details</a>
+            </div>
+
+            <div class="project">
+                <h3>Project 4</h3>
+                <p>Project Description</p>
+                <a href="C:\Users\admin\Desktop\e-portfolio\code\project 4.html">View Details</a>
+            </div>
+            
+            <!-- Add more projects as needed -->
+        </div>
+    </section>
+
+    <section class="social-section">
+        <div class="social-profile">
+            <p>Connect with me on social media:</p>
+        </div>
+        <div class="social-profile">
+            <a href="https://linkedin.com/in/ishxi" target="_blank">
+                <img src="C:\Users\admin\Desktop\e-portfolio\images\icons\linkedin.png" alt="Linkedin">
+            </a>
+        </div>
+        <div class="social-profile">
+            <a href="mailto:Iagrawal@depaul.edu" target="_blank">
+                <img src="C:\Users\admin\Desktop\e-portfolio\images\icons\mail.png" alt="mail">
+            </a>
+        </div>
+        <div class="social-profile">
+            <a href="https://github.com/ishita143" target="_blank">
+                <img src="C:\Users\admin\Desktop\e-portfolio\images\icons\github.png" alt="github">
+            </a>
+        </div>
+    </section>
+
+    <div id="projectModal" class="project-modal">
+        <span class="close-modal" onclick="closeProjectModal()">&times;</span>
+        <h2 id="modalTitle"></h2>
+        <p id="modalContent"></p>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 ISHITA❤️. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // JavaScript for image slider
+        let currentIndex = 0;
+        const images = document.querySelectorAll('.image-slider img');
+        setInterval(() => {
+            images[currentIndex].style.display = 'none';
+            currentIndex = (currentIndex + 1) % images.length;
+            images[currentIndex].style.display = 'block';
+        }, 3000);
+    </script>
+
+</body>
+</html>
